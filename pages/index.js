@@ -15,6 +15,7 @@ export async function getStaticProps() {
     props: {
       recipes: res.items,
     },
+    revalidate: 15, //incremental static regeneration
   };
 }
 

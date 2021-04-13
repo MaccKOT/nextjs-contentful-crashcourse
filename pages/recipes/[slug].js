@@ -37,6 +37,7 @@ export async function getStaticProps({ params }) {
   return {
     props: {
       recipe: items[0],
+      revalidate: 15, //seconds to revalidate page
     },
   }; //return only fist item
 }

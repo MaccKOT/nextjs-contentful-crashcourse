@@ -1,3 +1,3 @@
 Next.js & Contentful [tutorial by the Net Ninja](https://www.youtube.com/watch?v=m9mNsYJbkNg).
 
-## Getting Started
+## [Live demo](https://practical-minsky-e3dbde.netlify.com)

@@ -35,6 +35,16 @@ export async function getStaticProps({ params }) {
     'fields.slug': params.slug,
   });
 
+  // if no recipe fetched -> redirect to main page
+  if (!items.length) {
+    return {
+      redirect: {
+        destination: '/',
+        permanent: false,
+      },
+    };
+  }
+
   return {
     props: {
       recipe: items[0],

@@ -5,6 +5,8 @@ import Image from 'next/image';
 const RecipeCard = ({ recipe }) => {
   const { title, slug, cookingTime, thumbnail } = recipe.fields;
 
+  /* ! WARN thumbnail.fields.file.url is undefined if images in draft stage. Make check   */
+
   return (
     <div className='card'>
       <div className='featured'>
